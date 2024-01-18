@@ -1,0 +1,52 @@
+# model configs
+pretrained_model_name: "stabilityai/stable-diffusion-2-base"
+
+# training configs
+max_iterations: 100000
+batch_size: 5
+minimum_image_size: 512
+noise_scheduler: "DDPM"
+mixed_precision: "bf16"
+gradient_checkpointing: True
+use_bfloat16: False
+image_reward_tuning: True
+skin_tone_diversity_sp_tuning: False
+spatial_unidet_tuning: False
+use_pretrain_dataset : False
+use_ema: False
+
+# optimization configs
+learning_rate: 2.0e-6
+lr_scheduler: "constant"
+lr_warmup_steps: 1
+lr_warmup_start_ratio: 1.0
+gradient_accumulation_steps: 1
+adam_beta1: 0.9
+adam_beta2: 0.999
+adam_epsilon: 1.0e-8
+weight_decay: 1.0e-2
+
+# reduce memory usage (might slow down training)
+enable_xformers_memory_efficient_attention: True
+enable_vae_tiling: False
+enable_attention_slicing: False
+enable_vae_slicing: False
+
+# DDPO configs
+n_inference_steps: 50
+n_train_steps: 5
+resolution: 512
+guidance_scale: 7.0
+eta: 1.0
+train_cfg: True
+ADV_CLIP_MAX: 10.0
+clip_range: 1.0e-4 #5e-2
+combine_DDPO_MSE: False
+
+# "ddpo_loss_coef": 100
+ddpo_loss_scale: 1
+
+# save
+save_interval: 200
+save_folder: "/data1/DDPO_Nov1_Composition_SD2_wPretrain_Laion_DDIM50_train5_clip1e-4_lr2e-6_const_1Mprompts_allAVG-batch2048/"
+snapshot_dir: "/data1/yinan_rl_code_test/"
