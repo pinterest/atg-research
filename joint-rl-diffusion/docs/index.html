@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Academic Project Page</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Large-scale Reinforcement Learning for Diffusion Models</h1>
+            <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/yinan-zhang-33a58a14a/">Yinan Zhang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=nABXo3sAAAAJ&hl=en">Eric Tzeng</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://yilundu.github.io/">Yilun Du</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/dmitry-kislyuk-2002043b">Dmitry Kislyuk</a><sup>1</sup>
+            </span>
+          </div>
+
+                            <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Pinterest ATG,</span>
+            <span class="author-block"><sup>2</sup>MIT CSAIL</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://github.com/pinterest/atg-research/tree/main/joint-rl-diffusion"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/pinterest/atg-research/tree/main/joint-rl-diffusion"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+<!--               <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/pinterest/atg-research/tree/main/joint-rl-diffusion"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+    <!--    <img src="./static/visual/tasks_progression.png"
+                 alt="RL training visualization."/> -->
+
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/rl_vis_progression/animation_video.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        We perform multi-task RL training on text-to-image diffusion models; here shows the sample evolution from a single model that is optimized for three  objectives simultaneously during training. 
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Text-to-image diffusion models are a class of deep generative models that have demonstrated an impressive capacity for high-quality image generation. However, these models are susceptible to implicit biases that arise from web-scale text-image training pairs and may inaccurately model aspects of images we care about. This can result in suboptimal samples, model bias, and images that do not align with human ethics and preferences. In this paper, we present an effective scalable algorithm to improve diffusion models using Reinforcement Learning (RL) across a diverse set of reward functions, such as human preference, compositionality, and fairness over millions of images. We illustrate how our approach substantially outperforms existing methods for aligning diffusion models with human preferences. We further illustrate how this substantially improves pretrained Stable Diffusion (SD) models, generating samples that are preferred by humans 80.3% of the time over those from the base SD model while simultaneously improving both the composition and diversity of generated samples.
+       <!--    </p>
+          <p> -->
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<!-- End image carousel -->
+
+<section class="section">
+  <!-- <div class="container is-max-desktop"> -->
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-three-fifths">
+      <!-- <div class="column is-full-width"> -->
+        <h2 class="title is-3">Results</h2>
+
+        <!-- Interpolating. -->
+        <h3 class="title is-4">Human Preferences</h3>
+        <div class="content has-text-justified">
+          <p>
+            We fine-tune Stable Diffusion 2 with ImageReward, which was trained on human assessments of text-image pairs, to optimize for human preferences. We show the results from our fine-tuned model on real-user prompts here and provide qualitative comparison with other reward optimization methods below. By evaluating our model on both in-domain dataset DiffusionDB and out-of-domain test set PartiPrompts, we demonstrate that our trained model generates more visually appealing images compared to the base SDv2 model, and it generalizes well to unseen text prompts.<br><br>
+
+            All images below are generated with the same random seeds. Our outputs are better aligned with human aesthetic preferences, favoring finer details, focused composition, vivid colors, and high contrast.
+          </p>
+    <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <img src="./static/rl_vis_ours_sd2/vis_1.png" alt="comparison1"/>
+          <!-- <p> A portrait of an anthropomorphic wolf wearing a black doublet, furry fursona, Victorian era masterwork, by Samuel Luke Fildes </p> -->
+               <!--  <h4 class="subtitle has-text-centered">A portrait of an anthropomorphic wolf wearing a black doublet, furry fursona, Victorian era masterwork, by Samuel Luke Fildes</h4> -->
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_ours_sd2/vis_2.png" alt="comparison2"/>
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_ours_sd2/vis_3.png" alt="comparison3"/>
+        </div>
+<!--         <div class="item">
+          <img src="./static/rl_vis_ours_sd2/vis_4.png" alt="comparison4"/>
+        </div> -->
+        <div class="item">
+          <img src="./static/rl_vis_ours_sd2/vis_5.png" alt="comparison5"/>
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_ours_sd2/vis_6.png" alt="comparison6"/>
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_ours_sd2/vis_7.png" alt="comparison7"/>
+        </div>
+         <div class="item">
+          <img src="./static/rl_vis_ours_sd2/vis_8.png" alt="comparison8"/>
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_ours_sd2/vis_9.png" alt="comparison9"/>
+        </div>
+         <div class="item">
+          <img src="./static/rl_vis_ours_sd2/vis_10.png" alt="comparison10"/>
+        </div>
+
+        </div>
+        </div>
+    </div>
+
+ <!--        </div>
+        <div class="hero-body">
+       <img src="./static/visual/sd2_ours_2x5.png"
+                 alt="sd2_ours_2x5_human_preference"/>
+        </div>
+ -->
+
+
+    <h3 class="title is-4">Baseline Comparison</h3>
+    Prior reward fine-tuning methods for diffusion models mainly fall under three categories: reward-based loss reweighting, dataset augmentation, and backpropagation through the reward model. We compare against a variety of baseline methods, including ReFL, RAFT, DRaFT and Reward-weighted, covering the three different methodologies.
+    
+    <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <img src="./static/rl_vis_human_preference/vis1_1.png" alt="A portrait of an anthropomorphic wolf wearing a black doublet, furry fursona, Victorian era masterwork, by Samuel Luke Fildes"/>
+          <!-- <p> A portrait of an anthropomorphic wolf wearing a black doublet, furry fursona, Victorian era masterwork, by Samuel Luke Fildes </p> -->
+               <!--  <h4 class="subtitle has-text-centered">A portrait of an anthropomorphic wolf wearing a black doublet, furry fursona, Victorian era masterwork, by Samuel Luke Fildes</h4> -->
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_human_preference/vis2_2.png" alt="Illustration, a study of a nordic village, post grunge concept art by Josan Gonzales and Wlop, highly detailed, intricate, sharp focus, Trending on Artstation HQ, deviantart-H 704"/>
+   <!--        <h3 class="subtitle has-text-centered">Illustration, a study of a nordic village, post grunge concept art by Josan Gonzales and Wlop, highly detailed, intricate, sharp focus, Trending on Artstation HQ, deviantart-H 704</h3> -->
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_human_preference/vis3_2.png" alt="Kitten walks the empty street in a rainy day, led lights around the place, digital painting, ultra detailed, unreal engine 5"/>
+               <!--  <h3 class="subtitle has-text-centered">Kitten walks the empty street in a rainy day, led lights around the place, digital painting, ultra detailed, unreal engine 5</h3> -->
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_human_preference/vis4_2.png" alt="Woman with long red hair, very beautiful style, in a gold suit, night desert, dunes, photorealism, night in the desert, her face illuminated by golden rays, pensive, dreamy, red lips, john singer sargent, edgard maxence"/>
+        <!--   <h3 class="subtitle has-text-centered">Woman with long red hair, very beautiful style, in a gold suit, night desert, dunes, photorealism, night in the desert, her face illuminated by golden rays, pensive, dreamy, red lips, john singer sargent, edgard maxence</h3> -->
+        </div>
+
+          <div class="item">
+          <img src="./static/rl_vis_human_preference/vis5_2.png" alt="A portrait of a gothic princess in white baroque dress in a scenic environment by Henriette Ronner - Knip"/>
+     <!--            <h3 class="subtitle has-text-centered">A portrait of a gothic princess in white baroque dress in a scenic environment by Henriette Ronner - Knip</h3> -->
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_human_preference/vis6_2.png" alt="Goddess of illusion, beautiful, stunning, breathtaking, mirrors, glass, magic circle, magic doorway, fantasy, mist, bioluminescence, hyper-realistic, unreal engine, by blizzard concept artists"/>
+       <!--    <h3 class="subtitle has-text-centered">Goddess of illusion, beautiful, stunning, breathtaking, mirrors, glass, magic circle, magic doorway, fantasy, mist, bioluminescence, hyper-realistic, unreal engine, by blizzard concept artists</h3> -->
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_human_preference/vis7_2.png" alt="A portrait painting of a husky in cowboy costume, wearing a cowboy hat, by Rembrandt, character design, trending on artstation"/>
+        <!--         <h3 class="subtitle has-text-centered">A portrait painting of a husky in cowboy costume, wearing a cowboy hat, by Rembrandt, character design, trending on artstation</h3> -->
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_human_preference/vis8_2.png" alt="Old house at the end of a forest road in the rain, creepy ambiance, high focus, highly detailed"/>
+                <!-- <h3 class="subtitle has-text-centered">Old house at the end of a forest road in the rain, creepy ambiance, high focus, highly detailed</h3> -->
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_human_preference/vis9_2.png" alt="Head and shoulders portrait of a female knight, quechua!, lorica segmentata, cuirass, tonalist, symbolist, realism, ..."/>
+           <!--      <h3 class="subtitle has-text-centered">Head and shoulders portrait of a female knight, quechua!, lorica segmentata, cuirass, tonalist, symbolist, realism, …</h3> -->
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_human_preference/vis10_2.png" alt=" A hyper realistic cat warrior, ultra detailed, magic the gathering art, digital art, cinematic, studio lighting, …"/>
+             <!--    <h3 class="subtitle has-text-centered">A hyper realistic cat warrior, ultra detailed, magic the gathering art, digital art, cinematic, studio lighting, …</h3> -->
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_human_preference/vis11_2.png" alt=" Anime portrait by Stanley Artgerm Lau, WLOP, Rossdraws, James Jean, Andrei Riabovitchev, Marc Simonetti, and Sakimichan, trending on artstation"/>
+                <!-- <h3 class="subtitle has-text-centered">Anime portrait by Stanley Artgerm Lau, WLOP, Rossdraws, James Jean, Andrei Riabovitchev, Marc Simonetti, and Sakimichan, trending on artstation</h3> -->
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_human_preference/vis12_2.png" alt=" A hauntingly beautiful woman with horns, painted by Artgerm and Tom Bagshaw, fantasy art, dramatic lighting, highly detailed oil painting"/>
+                <!-- <h3 class="subtitle has-text-centered">A hauntingly beautiful woman with horns, painted by Artgerm and Tom Bagshaw, fantasy art, dramatic lighting, highly detailed oil painting</h3> -->
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_human_preference/vis13_2.png" alt="A peaceful lakeside landscape"/>
+                <!-- <h3 class="subtitle has-text-centered">A peaceful lakeside landscape</h3> -->
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_human_preference/vis14_2.png" alt="A drawing of a man standing under a tree"/>
+                <!-- <h3 class="subtitle has-text-centered">A drawing of a man standing under a tree</h3> -->
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_human_preference/vis15_2.png" alt="A cat looking out of a window"/>
+                <!-- <h3 class="subtitle has-text-centered">A cat looking out of a window</h3> -->
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_human_preference/vis16_2.png" alt="A small house"/>
+                <!-- <h3 class="subtitle has-text-centered">A small house</h3> -->
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_human_preference/vis17_2.png" alt="A robot cooking in the kitchen"/>
+                <!-- <h3 class="subtitle has-text-centered">A robot cooking in the kitchen</h3> -->
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_human_preference/vis18_2.png" alt="Black hi-top sneakers"/>
+                <!-- <h3 class="subtitle has-text-centered">Black hi-top sneakers</h3> -->
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_human_preference/vis19_2.png" alt="A stop sign with a large tree behind it"/>
+                <!-- <h3 class="subtitle has-text-centered">A stop sign with a large tree behind it</h3> -->
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_human_preference/vis20_2.png" alt="A squirrel in a forest"/>
+                <!-- <h3 class="subtitle has-text-centered">A squirrel in a forest</h3> -->
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_human_preference/vis21_2.png" alt="A full moon rising above a mountain at night"/>
+                <!-- <h3 class="subtitle has-text-centered">A full moon rising above a mountain at night</h3> -->
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_human_preference/vis22_2.png" alt="A soccer ball flying over a car"/>
+                <!-- <h3 class="subtitle has-text-centered">A soccer ball flying over a car</h3> -->
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+
+
+<!--         <div class="hero-body">
+        <img src="./static/visual/im_vis1.png"
+                 alt="human preference baseline visualization."/>
+        </div>
+        <div class="hero-body">
+        <img src="./static/visual/im_vis2.png"
+                 alt="human preference baseline visualization."/>
+        </div> -->
+        <br/>
+        <!--/ Interpolating. -->
+
+        <!-- Re-rendering. -->
+        <h3 class="title is-4">Skintone Diversity</h3>
+        <div class="content has-text-justified">
+          <p>
+            The training of diffusion models is highly data-driven, relying on billion-sized 
+            datasets that are randomly scraped from internet. As a result, the trained models 
+            may contain significant social bias and stereotypes. For example, it has been 
+            observed that text-to-image diffusion models commonly exhibit a tendency to generate
+            humans with lighter skintones. We aim to mitigate this bias by explicitly guiding the 
+            model using a skintone diversity reward.
+
+            During training, we use a reward function that encourages a uniform distribution among
+            different skintones. We observe that our fine-tuned model greatly reduces the skintone 
+            bias embedded in the pretrained SDv2 model, especially for occupations with more social 
+            stereotypes or biases inherent in the pretraining dataset.
+          </p>
+        </div>
+
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <img src="./static/rl_vis_skintone/chemist.png" alt="A portrait of a chemist"/>
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_skintone/police_officer.png" alt="A portrait of a police officer"/>
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_skintone/economist.png" alt="A portrait of an economist"/>
+        </div>
+                <div class="item">
+          <img src="./static/rl_vis_skintone/plumber.png" alt="A portrait of a plumber"/>
+        </div>
+         <div class="item">
+          <img src="./static/rl_vis_skintone/manager.png" alt="A portrait of a manager"/>
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_skintone/pr_person.png" alt="A portrait of a PR person"/>
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_skintone/announcer.png" alt="A portrait of an announcer"/>
+        </div>
+         <div class="item">
+          <img src="./static/rl_vis_skintone/dentist.png" alt="A portrait of a dentist"/>
+        </div>
+        <div class="item">
+          <img src="./static/rl_vis_skintone/receptionist.png" alt="A portrait of a receptionist"/>
+        </div>
+                <div class="item">
+          <img src="./static/rl_vis_skintone/executive.png" alt="A portrait of an executive"/>
+        </div>
+
+
+            </div>
+    </div>
+  </div>
+
+<!--     <div class="hero-body">
+       <img src="./static/visual/skintone_vis.png"
+                 alt="RL training visualization."/>
+        </div> -->
+        <!--/ Re-rendering. -->
+
+
+
+    <!--/ Animation. -->
+
+    <h3 class="title is-4">Object Composition</h3>
+        <div class="content has-text-justified">
+          <p>
+            As diffusion models often fail to accurately generate different 
+            compositions of objects in a scene, we further explored
+            using our RL framework in ensuring compositionality with
+            diffusion models. We use relationship terms such as “and,” “next to,” “near,” “on side of” and “beside” to 
+            produce captions that designate a spatial relationship between two objects and use the generated captions for training and evaluating the compositional skill of the model.
+          </p>
+        </div>
+    
+    <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-cake-desk">
+          <img src="./static/rl_vis_composition/vis4.png" alt="a blue jay near a coffee"/>
+        </div>
+        <div class="item item-chips-blue-jay">
+          <img src="./static/rl_vis_composition/vis5.png" alt="an insect next to a telephone"/>
+        </div>
+        <div class="item item-cake-desk">
+          <img src="./static/rl_vis_composition/vis1.png" alt="A cake next to a desk."/>
+          <h2 class="subtitle has-text-centered"> A cake next to a desk. </h2>
+        </div>
+        <div class="item item-chips-blue-jay">
+          <img src="./static/rl_vis_composition/vis2.png" alt="Chips beside a blue jay."/>
+          <h2 class="subtitle has-text-centered"> Chips beside a blue jay. </h2>
+        </div>
+        <div class="item item-apple-pillow">
+          <img src="./static/rl_vis_composition/vis3.png" alt="An apple and a pillow."/>
+          <h2 class="subtitle has-text-centered"> An apple and a pillow. </h2>
+        </div>
+        <div class="item item-apple-pillow">
+          <img src="./static/rl_vis_composition/vis6.png" alt="a flashlight beside a lily"/>
+        </div>
+        <div class="item item-house-sunglasses">
+          <img src="./static/rl_vis_composition/vis7.png" alt="A house on side of sunglasses"/>
+        </div>
+        <div class="item item-basketball-flashlight">
+          <img src="./static/rl_vis_composition/vis8.png" alt="A basketball and a flashlight"/>
+        </div>
+        <div class="item item-toaster-swimming-pool">
+          <img src="./static/rl_vis_composition/vis9.png" alt="A toaster beside a swimming pool"/>
+        </div>
+        <div class="item item-house-pretzel">
+          <img src="./static/rl_vis_composition/vis10.png" alt="A house near a pretzel"/>
+        </div>
+
+
+        
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+<!-- </div> -->
+
+</section>
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code [ArXiv] </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
