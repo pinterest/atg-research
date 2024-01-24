@@ -27,7 +27,7 @@ Text-to-image diffusion models are a class of deep generative models that have d
 
 
 #### Human Preference Reward model
-The hyperparameters and the training setting for human preference fine-tuning can be found in in [configs/imagereward_train_configs.yaml](https://github.com/pinterest/atg-research/blob/main/joint-rl-diffusion/configs/imagereward_train_configs.yaml). Run the following command to train SD2 model with ImageReward: 
+The hyperparameters and the training setting for human preference fine-tuning can be found in [configs/imagereward_train_configs.yaml](https://github.com/pinterest/atg-research/blob/main/joint-rl-diffusion/configs/imagereward_train_configs.yaml). Run the following command to train SD2 model with ImageReward: 
 
 
 ```bash
