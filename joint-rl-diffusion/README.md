@@ -2,7 +2,7 @@
 
 <!-- TITLE -->
 # **Large-scale Reinforcement Learning for Diffusion Models**
-![RLDiffusion](../docs/rl_diffusion/static/rl_vis_progression/tasks_progression_teaser.png)
+![RLDiffusion](../docs/rl-diffusion/static/rl_vis_progression/tasks_progression_teaser.png)
 
 [![arXiv](https://img.shields.io/badge/cs.LG-arXiv:2401.12244-b31b1b.svg)](https://arxiv.org/abs/2401.12244)
 [![Website](https://img.shields.io/badge/🌎-Website-blue.svg)](https://pinterest.github.io/atg-research/rl-diffusion/)
