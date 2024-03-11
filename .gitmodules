@@ -1,0 +1,6 @@
+[submodule "omnisearchsage/extension/third_party/icu"]
+	path = omnisearchsage/extension/third_party/icu
+	url = https://github.com/unicode-org/icu.git
+[submodule "omnisearchsage/extension/third_party/abseil-cpp"]
+	path = omnisearchsage/extension/third_party/abseil-cpp
+	url = https://github.com/abseil/abseil-cpp.git
