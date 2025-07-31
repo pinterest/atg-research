@@ -12,8 +12,8 @@ TransAct V2: Lifelong User Action Sequence Modeling on Pinterest Recommendation.
 
 ## TransAct
 Xue Xia, Chantat Eksombatchai, Nikil Pancha, Dhruvil Deven Badani, Po-
-Wei Wang,, Neng Gu, Saurabh Vishwas Joshi, Nazanin Farahpour, Zhiyuan
-Zhang, Andrew Zhai . 2023. TransAct: Transformer-based Realtime User
+Wei Wang, Neng Gu, Saurabh Vishwas Joshi, Nazanin Farahpour, Zhiyuan
+Zhang, Andrew Zhai. 2023. TransAct: Transformer-based Realtime User
 Action Model for Recommendation at Pinterest.
 
 ## Requirements
