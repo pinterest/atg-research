@@ -27,57 +27,17 @@ InteractRank extends the traditional two-tower architecture by incorporating:
 
 The model achieves improved ranking quality while maintaining the computational efficiency needed for web-scale deployment.
 
-## Installation
+## Installation and Usage
 
 ```bash
-git clone https://github.com/pinterest/interactrank
-cd interactrank
+git clone https://github.com/pinterest/atg-research.git
+cd InteractRank/interactrank
 pip install -r requirements.txt
+chmod 777 run.sh
+./run.sh -> this will trigger the config bundle for training LW Model with synthetic data for one batch
 ```
 
-## Usage
-
-### Quick Start
-
-```python
-from interactrank import InteractRankModel
-from interactrank.data import SyntheticDataGenerator
-
-# Initialize model
-model = InteractRankModel(
-    query_tower_dim=128,
-    item_tower_dim=128,
-    interaction_dim=64
-)
-
-# Load synthetic data for testing
-train_data = SyntheticDataGenerator.generate_dataset(num_samples=1000)
-
-# Train model
-model.train(train_data)
-
-# Get pre-ranking scores
-scores = model.predict(queries, items)
 ```
-
-### Training on Custom Data
-
-See `examples/custom_training.py` for detailed examples of training on your own dataset.
-
-## Baselines
-
-This repository includes implementations of baseline models for comparison:
-
-- BM25 (`baselines/bm25.py`)
-- Vanilla Two-Tower Model (`baselines/two_tower.py`)
-
-## Synthetic Dataset
-
-The repository includes a synthetic dataset generator (`data/synthetic.py`) that creates sample data matching the expected input format. This can be used to:
-
-- Understand the expected data format
-- Test model implementation
-- Run initial experiments
 
 ## Citation
 
