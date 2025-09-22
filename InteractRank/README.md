@@ -99,7 +99,7 @@ This project is licensed under the Creative Commons Attribution 4.0 Internationa
 
 ## Contact
 
-For questions about the code or paper, please contact Bhawna Juneja (bjuneja@pinterest.com).
+For question about the code or paper, please contact Bhawna Juneja (bjuneja@pinterest.com).
 
 ## Acknowledgments
 
