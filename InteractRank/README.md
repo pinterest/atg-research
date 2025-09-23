@@ -16,7 +16,7 @@ InteractRank is a novel two-tower pre-ranking model that incorporates cross inte
 
 ## Model Architecture
 
-![InteractRank Architecture](assets/lw_scoring_v6.jpg)
+![InteractRank Architecture](assets/interact-rank.png)
 
 InteractRank extends the traditional two-tower architecture by incorporating:
 
